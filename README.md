@@ -1,8 +1,24 @@
-# React + Vite
+# RR-hadson
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Geting hands on with react router.
 
-Currently, two official plugins are available:
+## Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Pre-req
+1. Node v18.16.0
+2. Npm 9.5.1
+
+### Install deps
+1. Install deps: `npm run i`
+2. Run App : `npm run dev`
+
+The page should look like this: 
+![test](demo.png)
+
+
+
+### Build tools
+1. Check fmt errors: `npm run fmt`
+2. Fix fmt errors: `npm run fmt-fix`
+3. Check lint errors: `npm run lint`
+4. Fix lint errors: `npm run lint -- --fix`
