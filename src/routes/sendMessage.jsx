@@ -14,7 +14,7 @@ export default function SendMessage() {
     <Form method="post" id="message-form">
       <label>
         <p>Your message to {contact.first} </p>
-        <textarea name="text_message" rows={4} cols={100}/>
+        <textarea name="text_message" rows={4} cols={100} />
       </label>
       <p>
         <button type="submit">Send</button>
