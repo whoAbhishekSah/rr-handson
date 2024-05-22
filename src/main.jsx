@@ -9,6 +9,7 @@ import Contact, { loader as contactLoader } from "./routes/contacts";
 import EditContacts, { action as editAction } from "./routes/edit";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import SendMessage, { action as sendMessageAction } from "./routes/sendMessage";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,12 @@ const router = createBrowserRouter([
         element: <EditContacts />,
         loader: contactLoader,
         action: editAction,
+      },
+      {
+        path: "contacts/:contactId/send_message",
+        element: <SendMessage />,
+        loader: contactLoader,
+        action: sendMessageAction,
       },
     ],
   },

@@ -35,10 +35,14 @@ export default function Contact() {
         )}
 
         {contact.notes && <p>{contact.notes}</p>}
+        {contact.text_message && <p>Last message: {contact.text_message}</p>}
 
         <div>
           <Form action="edit">
             <button type="submit">Edit</button>
+          </Form>
+          <Form action="send_message">
+            <button type="submit">Send Message</button>
           </Form>
           <Form
             method="post"
