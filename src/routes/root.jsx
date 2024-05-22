@@ -7,9 +7,9 @@ export async function loader() {
 }
 
 export async function action() {
-    const contact = await createContact();
-    return { contact };
-  }
+  const contact = await createContact();
+  return { contact };
+}
 
 export default function Root() {
   const { contacts } = useLoaderData();
